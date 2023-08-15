@@ -1,0 +1,77 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f2f2f2;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.carrossel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    max-width: 800px;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+#carrosselImagem {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.carrossel-imagem {
+    flex-shrink: 0;
+    width: 20%; /* Ajusta o tamanho das imagens */
+    height: auto;
+    margin-right: 8000px; /* Define o espaçamento entre as imagens */
+}
+
+#anterior,
+#proximo {
+    font-size: 18px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#anterior:hover,
+#proximo:hover {
+    background-color: #2980b9;
+}
